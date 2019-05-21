@@ -1,6 +1,7 @@
 <div class="main-footer">
     footer
 </div>
+
 <!-- Kết nối thư viện Jquery -->
 <script src="../js/jquery.js"></script>
 <!-- Kết nối file js/join.js -->
