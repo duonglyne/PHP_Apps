@@ -5,12 +5,26 @@
     <title>Messenger</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"/>
     <!-- Kết nối thư viện Font Awesome Icons -->
-    <link rel="stylesheet" href="../css/font-awesome/fontawesome.css">
+    <link rel="stylesheet" href="css/font-awesome/fontawesome.css">
     <!-- Kết nối file css/style.css -->
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-<div class="main-header">
-    <h1><i class="fa fa-commenting"></i> Messenger</h1>
-</div><!-- div.main-header -->
+<?php
+// Nếu tồn tại $user
+if ($user) {
+    // Hiển thị menu
+    echo '<div class="main-header">
+                 <h1><i class="fa fa-commenting"></i> Messenger</h1>
+                 <a href="logout.php">Đăng xuất<i class="fa fa-sign-out"></i></a> 
+          </div>
+          <div class="clearfix"></div>';
+}
+// Ngược lại
+else {
+    // Hiển thị navbar
+    echo '  <div class="main-header">
+                            <h1><i class="fa fa-commenting"></i> Messenger</h1>
+                    </div><!-- div.main-header -->';
+}
+?>
